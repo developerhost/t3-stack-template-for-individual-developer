@@ -1,0 +1,43 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "CLIENTVAR",
+    "cloudinary",
+    "clsx",
+    "googleusercontent",
+    "hookform",
+    "lucide",
+    "NEXTAUTH",
+    "nextjs",
+    "nextui",
+    "runtimes",
+    "signin",
+    "signout",
+    "superjson",
+    "tanstack",
+    "trpc",
+    "typesafety"
+  ], // 固有名詞などチェックをスキップしたい単語を登録する
+  "dictionaries": [
+    "softwareTerms",
+    "misc",
+    "companies",
+    "typescript",
+    "node",
+    "html",
+    "css",
+    "fonts",
+    "filetypes",
+    "npm"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/.vscode/**",
+    "**/.next/**",
+    "**/__generated__/**",
+    "**/package.json",
+    "**/pnpm-lock.yaml"
+  ]
+}
