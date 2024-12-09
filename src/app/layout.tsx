@@ -18,9 +18,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "1-infinity 1/2をひたすら当てていくゲーム",
-  description:
-    "1-infinity は1/2をひたすら当てていき、ベスト記録を目指すシンプルなブラウザゲームです。",
+  title: "t3-stack-template-for-individual-developer",
+  description: "t3-stack-template-for-individual-developer",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
