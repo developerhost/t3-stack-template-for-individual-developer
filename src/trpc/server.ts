@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-argument */
+
 import "server-only";
 
 import { createHydrationHelpers } from "@trpc/react-query/rsc";
