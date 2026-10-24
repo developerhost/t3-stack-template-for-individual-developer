@@ -7,13 +7,14 @@ import { Button } from "@/components/ui/button";
 import SafeSuspense from "@/app/_components/SafeSuspense";
 
 interface UserPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function UserPage({ params }: UserPageProps) {
-  const user = await api.user.getUserById({ id: params.id });
+  const { id } = await params;
+  const user = await api.user.getUserById({ id });
 
   if (!user) {
     return notFound();

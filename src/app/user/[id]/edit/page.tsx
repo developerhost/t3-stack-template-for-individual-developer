@@ -8,14 +8,15 @@ import { Button } from "@/components/ui/button";
 import UserEditForm from "@/app/_components/user/UserEditForm";
 
 interface UserPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function UserPage({ params }: UserPageProps) {
+  const { id } = await params;
   const session = await getServerAuthSession();
-  const user = await api.user.getUserById({ id: params.id });
+  const user = await api.user.getUserById({ id });
   const isOwner = session?.user.id === user.id;
 
   if (!user || !isOwner) {
